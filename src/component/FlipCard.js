@@ -1,15 +1,23 @@
 import React from "react";
 
-const FlipCard = () => {
+const FlipCard = ({ name, img, descriptıon }) => {
   return (
     <div className="container">
       <div className="card-container">
         <div className="card">
           <figure className="front">
-            <h1>On Yüz</h1>
+            <img src={img} alt={name} />
+            <h4>{name}</h4>
           </figure>
           <figure className="back">
-            <h1>Arka yüz</h1>
+            <div>
+              <h3>{name} Contants</h3>
+            </div>
+            <div>
+              {descriptıon.map((des) => (
+                <h5>{`* ${des}`}</h5>
+              ))}
+            </div>
           </figure>
         </div>
       </div>

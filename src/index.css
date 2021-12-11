@@ -2,6 +2,11 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+
+  color: #ffc501;
+}
+.main {
+  background-color: rgb(62, 64, 177);
 }
 .containers {
   display: flex;
@@ -14,8 +19,8 @@
 
 .card-container {
   margin: 5px;
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
 }
 
 .card {
@@ -37,16 +42,44 @@
   margin: 0;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 
 .card .front {
-  background-color: blue;
+  background-color: rgb(224, 72, 72);
   text-align: center;
 }
+.card .front img {
+  width: 92%;
+  border-radius: 25px;
+}
 .card .back {
-  background-color: red;
+  background-color: rgb(224, 72, 72);
   transform: rotateY(180deg);
+}
+
+.card .back h4 {
+  text-align: center;
+}
+.card .back h5 {
+  text-align: center;
+}
+form {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(62, 64, 177);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+input {
+  width: 70%;
+  height: 4rem;
+}
+
+input {
+  color: rgb(62, 64, 177);
+  background-color: #ffc501;
 }
